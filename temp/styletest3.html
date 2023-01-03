@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /*id의 우선순위가 class보다 높다*/
+      #myDiv {
+        background-color: aqua;
+        color: red;
+      }
+      .my-div {
+        background-color: rgba(65, 98, 160, 0.5) !important;
+      }
+      /*!important는 우선순위를 최상위로 설정 해줌*/
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="myDiv" class="my-div" style="font-weight: 900">div태그</div>
+  </body>
+</html>
